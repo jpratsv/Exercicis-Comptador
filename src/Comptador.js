@@ -6,13 +6,13 @@ export default function Comptador() {
   const pulsa = (pul) => {
     switch (pul) {
       case "+":
-        setDisplai(lista + 1);
+        if (lista < 10) setDisplai(lista + 1);
         break;
       case "-":
-        setDisplai(lista - 1);
+        if (lista > 0) setDisplai(lista - 1);
         break;
       case "5":
-        setDisplai(lista + 5);
+        if (lista <= 5) setDisplai(lista + 5);
         break;
       default:
     }
